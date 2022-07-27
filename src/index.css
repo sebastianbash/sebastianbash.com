@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    @apply text-base text-black dark:text-white bg-[#F5F6FA] dark:bg-[#111828] transition duration-500;
+}
+
+.fadeIn {
+    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+.fadeOut {
+    animation: fadeOut; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+.nav-style {
+    @apply px-2 md:px-4 rounded-md md:rounded-md flex justify-between bg-[#DCDDE1] dark:bg-[#202938] shadow-md shadow-black/20 dark:shadow-white/10 transition duration-500;
+}
