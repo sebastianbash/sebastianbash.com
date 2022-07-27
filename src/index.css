@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    @apply font-medium text-black dark:text-white bg-[#F5F6FA] dark:bg-[#111828];
+}
+
+.fadeIn {
+    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+    opacity: 1;
+}
+
+.fadeOut {
+    animation: fadeOut; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+.nav-style {
+    @apply px-2 md:px-4 rounded-md md:rounded-md flex justify-between bg-[#DCDDE1] dark:bg-[#202938] shadow-md shadow-black/20 hover:dark:shadow-white/10 lg:opacity-25 lg:hover:opacity-100 transition duration-1000
+}
