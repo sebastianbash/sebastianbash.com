@@ -1,11 +1,15 @@
 import React from 'react';
-function App() {
+import { Route, Routes } from 'react-router-dom';
+import Layout from './components/layout/Layout';
 
+function App() {
   return (
-    <div className="App">
-      <h1>Hello from sebastianbash.com</h1>
-    </div>
-  )
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<h3>Hello from Home</h3>} />
+      </Route>
+    </Routes>
+  );
 }
 
-export default App
+export default App;
