@@ -3,8 +3,45 @@
 @tailwind utilities;
 
 body {
-    @apply text-base text-black dark:text-white bg-[#F5F6FA] dark:bg-[#111828] transition duration-500;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    @apply font-light text-base text-black dark:text-white bg-[#F5F6FA] dark:bg-[#111828] transition duration-500;
 }
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('assets/fonts/Inter-Regular.ttf') format('ttf'),
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('assets/fonts/Inter-Medium.ttf') format('ttf'),
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('assets/fonts/Inter-SemiBold.ttf') format('ttf'),
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('assets/fonts/Inter-Black.ttf') format('ttf'),
+  }
 
 .fadeIn {
     animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
