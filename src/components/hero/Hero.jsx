@@ -4,7 +4,7 @@ export default function Hero() {
 
   return (
     <div className="hero min-h-screen mt-10">
-      <div className="hero-content flex flex-col-reverse md:flex-row-reverse">
+      <section className="hero-content flex flex-col-reverse md:flex-row-reverse">
         <img
           src="https://placeimg.com/260/400/arch"
           className="max-w-sm lg:max-w-md lg:w-1/2 rounded-lg shadow-2xl"
@@ -24,7 +24,7 @@ export default function Hero() {
           </p>
           <button className="mb-6 w-fit py-2 px-4 border dark:border-white/20 border-black/20 rounded-md">Bienvenido 👋</button>
         </div>
-      </div>
+      </section>
     </div>
   );
 }
