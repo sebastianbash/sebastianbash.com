@@ -5,9 +5,7 @@ module.exports = {
     './src/**/*.jsx',
     'node_modules/flowbite-react/**/*.jsx'
   ],
-  theme: {
-    extend: {},
-  },
+  theme: {},
   plugins: [
     // eslint-disable-next-line global-require
     require('flowbite/plugin'),

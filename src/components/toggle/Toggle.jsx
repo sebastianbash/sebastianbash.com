@@ -7,7 +7,7 @@ import {
   HiChevronDown,
   HiChevronUp,
 } from 'react-icons/hi';
-import ThemeContext from '../context/ThemeContext';
+import ThemeContext from '../../context/ThemeContext';
 
 export const ToggleTheme = () => {
   const { theme, setTheme } = useContext(ThemeContext);
