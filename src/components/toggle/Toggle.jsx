@@ -2,10 +2,8 @@ import React, { useState, useContext } from 'react';
 import {
   HiSun,
   HiMoon,
-  HiChevronLeft,
-  HiChevronRight,
-  HiChevronDown,
-  HiChevronUp,
+  HiOutlineMenu,
+  HiOutlineX
 } from 'react-icons/hi';
 import ThemeContext from '../../context/ThemeContext';
 
@@ -13,7 +11,7 @@ export const ToggleTheme = () => {
   const { theme, setTheme } = useContext(ThemeContext);
 
   return (
-    <div className="transition duration-500 ease-in-out bg-slate-600/80 lg:bg-transparent dark:lg:hover:bg-slate-600/80 lg:hover:bg-slate-800/80 rounded-md p-1 md:p-2 text-white lg:text-black hover:text-white dark:text-white cursor-pointer">
+    <div className="transition duration-500 ease-in-out bg-transparent p-1 md:p-2 text-black dark:text-white text-2xl cursor-pointer">
       {theme === 'dark' ? (
         <HiSun onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} />
       ) : (
@@ -23,32 +21,32 @@ export const ToggleTheme = () => {
   );
 };
 
-export const ToggleDropDown = ({ state, _callback }) => {
+export const ToggleNavigation = ({ state, _callback }) => {
   return (
     <>
       {state ? (
         <div className="my-auto fadeIn">
-          <ul className="flex justify-center items-center space-x-4 text-sm md:text-base">
+          <ul className="flex justify-center items-center space-x-4 text-sm md:text-sm font-[500]">
             <li>
-              <a href="#Inicio">Inicio</a>
+              <a href="#Proyectos" className="hover:underline">Proyectos</a>
             </li>
             <li>
-              <a href="#Proyecto">Proyectos</a>
+              <a href="#Acerca" className="hover:underline">Acerca</a>
             </li>
             <li>
-              <a href="#Acerca">Acercas</a>
+              <a href="#Servicios" className="hover:underline">Servicios</a>
             </li>
             <li>
-              <a href="#Contacto">Contacto</a>
+              <a href="#Contacto" className="hover:underline">Contacto</a>
             </li>
           </ul>
         </div>
       ) : null}
       <div
         onClick={_callback}
-        className="transition duration-500 ease-in-out bg-slate-600/80 lg:bg-transparent dark:lg:hover:bg-slate-600/80 lg:hover:bg-slate-800/80 rounded-md p-1 md:p-2 text-white lg:text-black hover:text-white dark:text-white cursor-pointer"
+        className="transition duration-500 ease-in bg-transparent border rounded-full p-1 md:p-2 text-black dark:text-white text-2xl cursor-pointer"
       >
-        {state ? <HiChevronRight /> : <HiChevronLeft />}
+        {state ? <HiOutlineX /> : <HiOutlineMenu />}
       </div>
     </>
   );
