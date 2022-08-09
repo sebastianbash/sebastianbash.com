@@ -6,12 +6,12 @@ import Brand4 from '../../assets/img/stack-brand.svg';
 
 export default function Clients() {
   return (
-    <div className="lg:h-[28rem] w-full md:flex md:flex-col md:justify-center md:items-center">
-        <div className="container lg:h-[11rem] md:flex md:flex-col md:justify-between md:items-center">
+    <div className="h-[500px] md:h-[28rem] w-full flex flex-col justify-center items-center">
+        <div className="container h-full md:h-[11rem] flex flex-col justify-around md:justify-between items-center">
             <div className="cli-title">
-                <h3 className="text-[2rem] leading-[2rem] tracking-[-.96px] text-center font-[600]">Clientes</h3>
+                <h3 className="text-[2rem] leading-[2rem] tracking-[-.96px] text-center font-[600] text-[#333333]">Clientes</h3>
             </div>
-            <div className="cli-brands flex flex-row justify-center items-center space-x-16">
+            <div className="cli-brands flex flex-col md:flex-row justify-center items-center md:space-x-16">
                 <div className="logo-card px-8 py-6 opacity-50 hover:opacity-100 bg-white hover:shadow-xl transition-all">
                     <img src={Brand1} alt="Client" className="" />
                 </div>
