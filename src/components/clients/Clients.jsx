@@ -6,8 +6,8 @@ import Brand4 from '../../assets/img/stack-brand.svg';
 
 export default function Clients() {
   return (
-    <div className="h-[500px] md:h-[28rem] w-full flex flex-col justify-center items-center">
-        <div className="container h-full md:h-[11rem] flex flex-col justify-around md:justify-between items-center">
+    <div className="cli-section h-[500px] md:h-[28rem] w-full flex flex-col justify-center items-center">
+        <div className="cli-wrapper h-full md:h-[11rem] flex flex-col justify-around md:justify-between items-center">
             <div className="cli-title">
                 <h3 className="text-[2rem] leading-[2rem] tracking-[-.96px] text-center font-[600] text-[#333333]">Clientes</h3>
             </div>
