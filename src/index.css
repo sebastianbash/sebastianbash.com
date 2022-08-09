@@ -25,3 +25,23 @@ body {
 }
 
 /* HERO */
+
+/* SERVICES */
+.services-bg {
+    background-image: url('/src/assets/img/shape1.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #F4F5FD;
+}
+
+@media screen and (min-width: 768px) {
+    .services-bg {
+        background-image: url('/src/assets/img/shape1.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-color: #F4F5FD;
+    }
+}
+
