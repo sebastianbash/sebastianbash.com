@@ -1,4 +1,5 @@
 import React from 'react';
+import Clients from '../clients/Clients';
 import Hero from '../hero/Hero';
 
 export default function Landing() {
@@ -6,6 +7,8 @@ export default function Landing() {
     <>
         {/* Hero section */}
         <Hero />
+        {/* Clients Section */}
+        <Clients />
         {/* Project section */}
         {/* About section */}
         {/* Contact section */}
