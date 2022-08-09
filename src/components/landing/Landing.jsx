@@ -1,6 +1,7 @@
 import React from 'react';
 import Clients from '../clients/Clients';
 import Hero from '../hero/Hero';
+import Services from '../services/Services';
 
 export default function Landing() {
   return (
@@ -9,7 +10,8 @@ export default function Landing() {
         <Hero />
         {/* Clients Section */}
         <Clients />
-        {/* Project section */}
+        {/* Services section */}
+        <Services />
         {/* About section */}
         {/* Contact section */}
     </>
