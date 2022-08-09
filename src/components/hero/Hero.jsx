@@ -4,7 +4,7 @@ import AvatarImg from '../../assets/img/avatar.webp';
 export default function Hero() {
 
   return (
-    <div className="hero min-h-screen mt-24 md:mt-22 lg:mt-11">
+    <div className="hero max-h-screen mt-24 md:mt-22 lg:mt-11">
       <div className="hero-content flex flex-col justify-center items-center lg:w-2/3 mx-auto">
         <div className="hero-avatar mb-8 md:mb-10">
           <img
