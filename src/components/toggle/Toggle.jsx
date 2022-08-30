@@ -22,22 +22,25 @@ export const ToggleTheme = () => {
 };
 
 export const ToggleNavigation = ({ state, _callback }) => {
+
+  const scrollTo = (element) => window.scrollTo({ top: document.getElementById(element).offsetTop , behavior: 'smooth' });
+
   return (
     <>
       {state ? (
         <div className="my-auto fadeIn">
           <ul className="flex justify-center items-center space-x-4 text-sm md:text-sm font-[500]">
             <li>
-              <a href="#Proyectos" className="hover:underline">Proyectos</a>
+              <p onClick={() => scrollTo('projects')} className="hover:underline">Proyectos</p>
             </li>
             <li>
-              <a href="#Acerca" className="hover:underline">Acerca</a>
+              <p onClick={() => scrollTo('about')} className="hover:underline">Acerca</p>
             </li>
             <li>
-              <a href="#Servicios" className="hover:underline">Servicios</a>
+              <p onClick={() => scrollTo('services')} className="hover:underline">Servicios</p>
             </li>
             <li>
-              <a href="#Contacto" className="hover:underline">Contacto</a>
+              <p onClick={() => scrollTo('contact')} className="hover:underline">Contacto</p>
             </li>
           </ul>
         </div>
