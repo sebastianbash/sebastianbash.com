@@ -1,7 +1,13 @@
 import React from 'react';
-import Clients from '../clients/Clients';
+import Clients from '../client/Clients';
 import Hero from '../hero/Hero';
-import Services from '../services/Services';
+import Services from '../service/Services';
+import Resume from '../resume/Resume';
+import Project from '../project/Project';
+import Testimonial from '../testimonial/Testimonial';
+import FreqQuestions from '../qa/FreqQuestions';
+import Contact from '../contact/Contact';
+import ScrollToTop from '../scrollTo/ScrollToTop';
 
 export default function Landing() {
   return (
@@ -13,7 +19,17 @@ export default function Landing() {
         {/* Services section */}
         <Services />
         {/* About section */}
+        <Resume />
+        {/* Projects section */}
+        <Project />
+        {/* Testimonials Section */}
+        <Testimonial />
+        {/* Frequently questions */}  
+        <FreqQuestions />
         {/* Contact section */}
+        <Contact />
+        {/* Get back to top button */}
+        <ScrollToTop />
     </>
   )
 }
