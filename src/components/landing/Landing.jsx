@@ -1,5 +1,5 @@
 import React from 'react';
-import Clients from '../client/Clients';
+import Client from '../client/Client';
 import Hero from '../hero/Hero';
 import Services from '../service/Services';
 import Resume from '../resume/Resume';
@@ -15,7 +15,7 @@ export default function Landing() {
         {/* Hero section */}
         <Hero />
         {/* Clients Section */}
-        <Clients />
+        <Client />
         {/* Services section */}
         <Services />
         {/* About section */}
